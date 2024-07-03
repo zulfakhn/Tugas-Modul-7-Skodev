@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Form Regristrasi</title>
+
+    <style>
+        h1 {
+            color: rgb(48, 185, 140);
+            margin: 0px 10px;
+            padding: 10px;
+        }
+
+        p {
+            margin: 0px 10px;
+            padding: 0px 10px;
+        }
+
+        form {
+            margin: 20px 30px;
+            padding: 30px;
+            width: 50%;
+            border: 1px solid rgb(236, 227, 209);
+            background-color: rgb(209, 238, 228);
+            border-radius: 20px;
+
+        }
+
+        form div {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        form > p {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        div p {
+            color: rgb(245, 112, 112);
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        
+        
+        form label {
+            width: 100px;
+            display: inline-block;
+
+        }
+
+        label[for="first_name"], label[for="last_name"], label[for="password"], 
+        label[for="age"], label[for="body"], label[for="option"], label[for="radio"] {
+            width: 180px;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            border-radius: 3px;
+        }
+
+        input[type="number"] {
+            width: 170px;
+            border-radius: 3px;
+        }
+
+        textarea[id="body"] {
+            border-radius: 5px;
+        }
+
+        select[id="option"] {
+            border-radius: 4px;
+        }
+
+        input[type="radio"]:hover {
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:hover {
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+            font-weight: bold;
+            color: rgb(39, 107, 167);
+            border: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Form Regristrasi</h1>
+    <p> Hai! Selamat Datang Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo quae ut aspernatur rerum cupidita.</p>
+    <form>
+        <p>Isi Form Regristrasi Terlebih Dahulu!</p>
+
+        <div>
+            <label for="first_name">Nama Depan</label>
+            <input type="text" id="first_name" 
+                        required>
+            <p>*gunakan huruf kapital</p>
+        </div>
+
+        <div>
+            <label for="last_name">Nama Belakang</label>
+            <input type="text" id="first_name" 
+                        required>
+            <p>*gunakan huruf kapital</p>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                        required>
+        </div>
+
+        <div>
+            <label for="age">Umur</label>
+            <input type="number" id="age"
+                        min="18" max="40">
+        </div>
+
+        <div>
+            <label for="body">Alasan Mendaftar</label>
+            <textarea id="body" cols="23" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="option">Opsi Pekerjaan</label>
+            <select id="option">
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="pekerja">Pekerja</option>
+                <option value="wiraswasta">Wiraswasta</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="radio">Jenis Kelamin</label>
+            <input type="radio" id="JK1" name="jenis_kelamin" value="Laki-Laki">
+            <label for="JK1">Laki-Laki</label>
+            <input type="radio" id="JK2" name="jenis_kelamin" value="Perempuan">
+            <label for="JK2">Perempuan</label>
+        </div>
+
+        <div>
+            <input type="checkbox">Ingat saya!
+        </div>
+
+        <p>*Baca syarat dan ketentuanya!</p>
+
+        <input type="submit" value="Lupa Pass">
+        <input type="submit" value="Login">
+
+        
+    </form>
+</body>
+</html>
